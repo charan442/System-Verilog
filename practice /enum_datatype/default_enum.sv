@@ -10,7 +10,7 @@ module default_enum;
     
     for(int i=0; i<5; i++) begin
       $display("Country name = %0s and its default value is = %0d",country.first,country);
-      country=country.first;
+      country=country.next;
     end
     $display("");
   end
